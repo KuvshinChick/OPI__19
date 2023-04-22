@@ -15,7 +15,8 @@ def unique_path(directory, name_pattern):
 
 if __name__ == "__main__":
     # Создать уникальное имя файла
-    # {:03d} - принимает целое число в качестве аргумента и задает минимальную ширину 3
+    # {:03d} - принимает целое число в качестве аргумента,
+    # задает минимальную ширину 3
     # и заполняет оставшиеся места нулями
-    path = unique_path(pathlib.Path.cwd(), 'test{:03d}.txt')
+    path = unique_path(pathlib.Path.cwd(), "test{:03d}.txt")
     print(path)
